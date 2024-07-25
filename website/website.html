@@ -1,21 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
-    <title>NAVBAR</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UHM</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="1">Home</a></li>
-            <li><a href="2">About</a></li>
-            <li><a href="3">Departement</a></li>
-            <li><a href="4">Admissions</a></li>
-            <li><a href="5">News And Event</a></li>
-            <li><a href="6">Gallery</a></li>
-            <li><a href="7">Contact</a></li>
-        </ul>
-    </nav>
-
-    </body>
+    <header>
+        <h1>Universitas Handayani Makassar</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('beranda')">Beranda</a></li>
+                <li><a href="#" onclick="showSection('tentang')">Tentang Kami</a></li>
+                <li><a href="#" onclick="showSection('program')">Program Studi</a></li>
+                <li><a href="#" onclick="showSection('berita')">Berita & Acara</a></li>
+                <li><a href="#" onclick="showSection('galeri')">Galeri</a></li>
+                <li><a href="#" onclick="showSection('kontak')">Kontak</a></li>
+                <li><a href="#" onclick="showSection('pendaftaran')">Pendaftaran</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="beranda" class="active">
+            <h2>Informasi Singkat Tentang Kampus</h2>
+            <p>Universitas Universitas Handayani adalah institusi pendidikan terkemuka...</p>
+            <img src="images/kampus.jpg" alt="Gambar Kampus">
+        </section>
+        <section id="tentang">
+            <h2>Sejarah Kampus</h2>
+            <p>Universitas Handayani Makassar didirikan pada tahun...</p>
+            <div class="flex-container">
+                <div class="box">
+                    <h2>Visi</h2>
+                    <div class="content">
+                        <p>Menjadi universitas terkemuka...</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <h2>Misi</h2>
+                    <div class="content">
+                        <p>Memberikan pendidikan berkualitas...</p>
+                    </div>
+                </div>
+            </div>
+            <h2>Profil Rektor dan Dekan</h2>
+            <p>Rektor: Prof. Dr. Muh Rahmatullah Syarif</p>
+            <p>Dekan Fakultas Teknik: Dr. H.Thoriq</p>
+            <!-- Tambahkan profil lainnya sesuai kebutuhan -->
+        </section>
+        <section id="program">
+            <h2>Daftar Program Studi</h2>
+            <ul>
+                <li>Teknik Informatika:...</li>
+                <li>Sistem Komputer:...</li>
+                <li>Sistem Informasi:...</li>
+                <li>Pendidikan Teknologi Informasi:...</li>
+                <!-- Tambahkan program studi lainnya sesuai kebutuhan -->
+            </ul>
+        </section>
+        <section id="berita">
+            <h2>Berita Terbaru</h2>
+            <article>
+                <h3>Judul Berita 1</h3>
+                <p>Deskripsi singkat berita 1...</p>
+            </article>
+            <article>
+                <h3>Judul Berita 2</h3>
+                <p>Deskripsi singkat berita 2...</p>
+            </article>
+            <!-- Tambahkan artikel berita lainnya sesuai kebutuhan -->
+            <h2>Acara Terbaru</h2>
+            <article>
+                <h3>Judul Acara 1</h3>
+                <p>Deskripsi singkat acara 1...</p>
+            </article>
+            <article>
+                <h3>Judul Acara 2</h3>
+                <p>Deskripsi singkat acara 2...</p>
+            </article>
+            <!-- Tambahkan artikel acara lainnya sesuai kebutuhan -->
+        </section>
+        <section id="galeri">
+            <h2>Foto Kampus</h2>
+            <img src="images/foto1.jpg" alt="Foto Kampus 1">
+            <img src="images/foto2.jpg" alt="Foto Kampus 2">
+            <!-- Tambahkan foto lainnya sesuai kebutuhan -->
+            <h2>Video Kampus</h2>
+            <video controls>
+                <source src="videos/video1.mp4" type="video/mp4">
+                Video tidak dapat diputar.
+            </video>
+            <!-- Tambahkan video lainnya sesuai kebutuhan -->
+        </section>
+        <section id="kontak">
+            <h2>Formulir Kontak</h2>
+            <form action="#" method="post">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Kirim</button>
+            </form>
+            <h2>Informasi Kontak</h2>
+            <p>Alamat: Jl. Adhyaksa Baru No. 1 Makassar</p>
+            <p>Telepon: 0411-4673395</p>
+            <p>Email: info@handayani.ac.id</p>
+        </section>
+        <section id="pendaftaran">
+            <h2>Informasi Pendaftaran</h2>
+            <p>Prosedur pendaftaran di Universitas Handayani Makassar adalah sebagai berikut...</p>
+            <h2>Formulir Pendaftaran Online</h2>
+            <form action="#" method="post">
+                <label for="fullname">Nama Lengkap:</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="dob">Tanggal Lahir:</label>
+                <input type="date" id="dob" name="dob">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="program">Pilih Program Studi:</label>
+                <select id="program" name="program">
+                    <option value="ti">Teknik Informatika</option>
+                    <option value="sk">Sistem Komputer</option>
+                    <option value="si">Sistem Informasi</option>
+                    <option value="pti">Pendidikan Teknologi Informasi</option>
+                    <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
+                </select>
+                <button type="submit">Daftar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Universitas Handayani Makassar. All rights reserved.</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('main section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+    </script>
+</body>
 </html>
