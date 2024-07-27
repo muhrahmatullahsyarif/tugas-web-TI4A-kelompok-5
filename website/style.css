@@ -69,7 +69,7 @@ section.active {
     background-color: #f0f0f0;
     width: 40%;
     max-width: 300px;
-    text-align: center;
+    text-align: left;
 }
 .box .content {
     display: grid;
