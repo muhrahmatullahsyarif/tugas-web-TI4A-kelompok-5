@@ -29,7 +29,8 @@ nav ul li a {
     transition: color 0.3s;
 }
 nav ul li a:hover {
-    color: #ffcc00;*
+    color: #ffcc00;
+}
 main {
     padding: 2em;
     background-color: white;
