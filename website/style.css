@@ -111,3 +111,76 @@ section.active {
     padding: 1em;
     border-radius: 4px;
 }
+
+/* css untuk galery */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.photo-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.photo-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.caption {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+}
+ /* untuk video */
+ .containervideo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.video-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.video-item video {
+    width: 100%; 
+    height: auto;
+    display: flex-end;
+}
+
+.caption {
+    padding: 10px;
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    background-color: #f9f9f9;
+}
